@@ -123,12 +123,8 @@ html, body {
     padding: 20px 0;
 }
 .footer .footer-container {
-
     max-width: 750px;
     margin: 0px auto;
-}
-.footer .footer-container .wrapper {
-    
 }
 .footer .footer-container .wrapper .eq {
     padding: 20px;
@@ -162,6 +158,11 @@ html, body {
     color: #6B6B6B;
     text-decoration: none;
 }
+.footer .footer-container .wrapper .eq .menu .item .link i {
+    padding-right: 10px;
+    color: #4b6cc1;
+}
+
 .footer .footer-container .copyright {
     text-align: center;
     padding: 25px;
