@@ -84,15 +84,15 @@ html, body {
 }
 .container .picture {
     margin: 0 auto;
-    width: 270px;
-    height: 300px;
+    width: 197px;
+    height: 220px;
     padding: 20px;
     background-color: #111215;
     border-radius: 15px;
 }
 .container .picture .image {
-    width: 270px;
-    height: 300px;
+    width: 197px;
+    height: 220px;
     object-fit: cover;
 }
 .container .content-title {
