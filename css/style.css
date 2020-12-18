@@ -1,104 +1,107 @@
 * {
     margin: 0px; 
     padding: 0px;
-    font-family: "Montserrat", sans-serif;
+    /*font-family: 'Nunito', sans-serif;*/
+    font-family: 'Rubik', sans-serif;
+
 }
 
 html, body {
-    background-color: #101010;
+    background-color: #FFFFFF;
+    color: #333333;
+}
+.wrapper { display: flex; }
+.eq { flex: 1; }
+.button {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
     color: #FFFFFF;
+    background-color: #4b6cc1;
+    border-radius: 20px;
+    text-align: center;
+}
+.button.center {
+    text-align: center;
 }
 
-.header {}
-.header .header-content {
-    width: 600px;
-    margin: 0px auto;
-    display: flex;
-    padding-top: 40px;
+.header { 
+    padding: 40px 0 0 0;   
+    background-color: #191a1d;
 }
-.header .header-content .content-left { 
-	flex: 1;
-	padding: 10px;
-}
-.header .header-content .content-left .logotipo {
+.header .logotipo {
+    padding-bottom: 40px;
     display: block;
-    width: 32px;
-    height: 32px;
-    background-color: ff6a00;
-}
-.header .header-content .content-right {
-	flex: 4;
-	padding: 10px;
-}
-.header .header-content .content-right .menu {
-    list-style: none;
-    float: right;
-}
-.header .header-content .content-right .menu .item {
-    float: left;
-}
-.header .header-content .content-right .menu .item a {
-    display: block;
-    padding: 7px 13px;
-    
-    font-size: 14px;
+    text-transform: uppercase;
     font-weight: 600;
-    color: #FFFFFF;
+    font-size: 28px;
+    text-align: center;
+    border-bottom: 4px solid #4b6cc1;
     text-decoration: none;
 }
+.header .logotipo .text {
+    color: #FFFFFF;
+}
+.header .logotipo .text .dot-color {
+    color: #4b6cc1;
+}
+.header .navigation-content {
+    max-width: 750px;
+    margin: 0px auto;
+}
+.header .navigation-content .wrapper .eq a{
+    display: inline-block;
+    width: 100px;
+    padding: 30px 44px;
+    text-decoration: none;
+    text-align: center;
+    color: #C1C1C1;
+    font-size: 20px;
+    font-weight: 400;
+}
+.header .navigation-content .wrapper .eq:hover a {
+    transition: all ease .2s;
+}
+.header .navigation-content .wrapper .eq:hover a ,
+.header .navigation-content .wrapper .eq a.selected {
+    color: #FFFFFF;    
+}
+
+
 
 
 .container {
-    
+    padding: 20px 0 80px 0;
 }
-.container .section {}
-.container .section .section-content {
-    width: 600px;
+.container.dark {
+    background-color: #191a1d;
+}
+.container .home-action {
+    padding-top: 40px;
+    width: 180px;
+    margin: 0 auto;
+}
+.container .content-title {
+    max-width: 750px;
     margin: 0px auto;
-}
-.container .section .section-content .section-head {
-    padding: 10px 10px 10px 10px;
-    font-size: 20px;
-    font-weight: 600;
-}
-.container .section .section-content .section-body {
-    padding: 10px 10px 10px 10px;
-}
-.container .section.projects .section-content .section-body {
-    display: grid;
-    width: 100%;
-    grid-template-areas: "a a";
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    grid-auto-rows: 180px;
-    grid-gap: 10px;
-}
-.container .section.projects .section-content .section-body .project {
-    
-}
-.container .section.projects .section-content .section-body .project .project-content {
-    height: 100%;
-    background-color: ff6a00;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-    filter: grayscale(100%);
-}
-.container .section.projects .section-content .section-body .project .project-content:hover {
-    filter: grayscale(0);
-}
-.container .section.projects .section-content .section-body .project .project-content:hover .title {
-    visibility: visible;
-}
-.container .section.projects .section-content .section-body .project .project-content .title {
-    position: absolute;
-    bottom: 0px;
-    visibility: hidden;
-    display: inline-block;
-    padding: 10px;
-    background-color: #ff6a00;
     text-align: center;
-    font-size: 15px;
-    font-weight: 500;
+}
+.container .content-title .title {
+    font-size: 50px;
+    font-weight: 600;
     color: #FFFFFF;
+}
+.container .content-title .sub-title {
+    font-size: 20px;
+    font-weight: 400;
+    color: #C1C1C1;
+}
+
+
+
+
+.footer {
+    background-color: #191a1d;
 }

@@ -1,5 +1,3 @@
-alert("Test Dev!");
-
 const listProjects = document.getElementById("list-projects");
 // Your web app's Firebase configuration
 const firebaseConfig = {
