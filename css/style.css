@@ -14,17 +14,21 @@ html, body {
 .eq { flex: 1; }
 .button {
     display: block;
-    padding: 10px 20px;
+    padding: 15px 20px;
     text-decoration: none;
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 600;
     color: #FFFFFF;
     background-color: #4b6cc1;
-    border-radius: 20px;
+    border: 2px solid #4b6cc1;
+    border-radius: 30px;
     text-align: center;
+    transition: all ease .3s;
 }
-.button.center {
-    text-align: center;
+.button:hover {
+    color: #4b6cc1;
+    background-color: transparent;
+    transform: scale(1.02);
 }
 
 .header { 
@@ -78,12 +82,21 @@ html, body {
 .container.dark {
     background-color: #191a1d;
 }
-.container .home-action {
-    padding-top: 40px;
-    width: 180px;
+.container .picture {
     margin: 0 auto;
+    width: 270px;
+    height: 300px;
+    padding: 20px;
+    background-color: #111215;
+    border-radius: 15px;
+}
+.container .picture .image {
+    width: 270px;
+    height: 300px;
+    object-fit: cover;
 }
 .container .content-title {
+    padding-top: 40px;
     max-width: 750px;
     margin: 0px auto;
     text-align: center;
@@ -96,12 +109,61 @@ html, body {
 .container .content-title .sub-title {
     font-size: 20px;
     font-weight: 400;
-    color: #C1C1C1;
+    color: #6B6B6B;
 }
-
-
+.container .home-action {
+    padding-top: 40px;
+    width: 180px;
+    margin: 0 auto;
+}
 
 
 .footer {
     background-color: #191a1d;
+    padding: 20px 0;
+}
+.footer .footer-container {
+
+    max-width: 750px;
+    margin: 0px auto;
+}
+.footer .footer-container .wrapper {
+    
+}
+.footer .footer-container .wrapper .eq {
+    padding: 20px;
+}
+.footer .footer-container .wrapper .eq .text {
+    color: #FFFFFF;
+}
+.footer .footer-container .wrapper .eq .text .title {
+    font-weight: 400;
+    font-size: 38px;
+    padding-bottom: 10px;
+}
+.footer .footer-container .wrapper .eq .text .sub-title {
+    font-size: 20px;
+    font-weight: 400;
+    color: #6B6B6B;
+}
+.footer .footer-container .wrapper .eq .button{
+    width: 170px;
+    margin-top: 20px;
+}
+.footer .footer-container .wrapper .eq .menu {
+    list-style: none;
+}
+.footer .footer-container .wrapper .eq .menu .item {
+    padding-bottom: 15px;
+}
+.footer .footer-container .wrapper .eq .menu .item .link {
+    font-size: 20px;
+    font-weight: 600;
+    color: #6B6B6B;
+    text-decoration: none;
+}
+.footer .footer-container .copyright {
+    text-align: center;
+    padding: 25px;
+    color: #6B6B6b;
 }
