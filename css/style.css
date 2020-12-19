@@ -10,7 +10,11 @@ html, body {
     background-color: #FFFFFF;
     color: #333333;
 }
-.wrapper { display: flex; }
+.wrapper { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 .eq { flex: 1; }
 .button {
     display: block;
@@ -56,8 +60,7 @@ html, body {
     margin: 0px auto;
 }
 .header .navigation-content .wrapper .eq a{
-    display: inline-block;
-    width: 100px;
+    display: block;
     padding: 30px 44px;
     text-decoration: none;
     text-align: center;
